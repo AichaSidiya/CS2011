@@ -27,7 +27,27 @@
                 
             }
             
+                        //  for(int i = 0; i < m; i++){
+            //     deque.addLast(arr[i]);
+            // }
             
+            // data.addAll(deque);
+            // max = data.size();
+            
+            // int size = m + 1;
+            // while(size < arr.length ){
+                
+            //     data.clear();
+            //     deque.removeFirst();
+            //     deque.addLast(arr[size]);
+            //     data.addAll(deque);
+                
+            //     if(max < data.size()){
+            //         max = data.size();
+            //     }
+            //     size++;
+            // }
+
             System.out.println(max);
             
             

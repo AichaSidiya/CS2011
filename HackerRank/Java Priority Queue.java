@@ -1,4 +1,6 @@
-
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 import java.util.*;
 
 class Student implements Comparable<Student>{
@@ -49,13 +51,13 @@ class Priorities{
         for(int i = 0; i < events.size(); i++){
             String[] parts = (events.get(i)).split(" ");
             if((parts[0]).equals("ENTER")){
-                
+
                 String fname = parts[1];
                 double cgpa =Double.parseDouble(parts[2]);
                 int id = Integer.parseInt(parts[3]);
-                    
+
                 Student st = new Student(id, fname, cgpa);
-                
+
                 studentPQ.add(st);
             }
             else if((parts[0]).equals("SERVED")){
@@ -70,4 +72,3 @@ class Priorities{
         return result;
     }
 }
-
